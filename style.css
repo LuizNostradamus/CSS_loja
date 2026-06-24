@@ -7,28 +7,70 @@ body{
     display: flex;
     flex-direction: column;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgba(0, 0, 0, 0.918);
+    background-color: rgba(155, 155, 155, 0.918);
 }
+/* Cabeçalho */
 header{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    background-image: url(./img/back.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;  
+    background-color: rgb(255, 255, 255);
 }
+.logo{
+    width: 270px;
+}
+.topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+nav{
+    display:flex;
+    gap:20px;
+}
+nav a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    padding:10px 15px;
+    border-radius:5px;
+    background-color: rgb(77,77,77);
+    margin: 10px;
+}
+header p{
+    text-align:center;
+}
+nav a:hover{
+    background-color:rgb(236, 236, 236);
+}
+header h1{
+    padding: 14px;
+    color: rgb(77,77,77);
+    font-family: 'Times New Roman', Times, serif; 
+}
+header p{
+    background-color: rgb(77, 77, 77);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+/* FIm cabeçalho */
 .card img{
     width: 100%;
     object-fit: cover;
     height: 200px;
 }
 footer{
-    width: auto;
+    background-color: rgb(97, 97, 97);
+    width: 100%;
     height: 10vh;
     text-align: center;
     margin:auto;
-    color: azure;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+footer p{
+    padding: 10px;
 }
 main{
     display: flex;
@@ -40,32 +82,28 @@ main{
     max-width: 1300px;
     margin: auto;
 }
-header p{
-    font-style: italic;
-    padding: 10px;
-}
-.logo{
-    margin-right: 20px;
-}
 .card{
     width: 300px;
     border-radius: 10px;
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(77, 77, 77);
     overflow: hidden;
     padding-bottom: 20px;
+    color: white;
 }
 .card:hover{
     transform: translateY(-5px);
     background-color: rgb(236, 236, 236);
+    color: black;
 }
 main button{
     display: block;
     margin: auto;
     width: 200px;
     height: 4vh;
-    border-color: rgb(82, 223, 216);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     font-style: oblique;
+    border: none;
 
 }
 .card h2{
@@ -76,3 +114,17 @@ main button{
 .card p{
     padding: 0 15px 15px;
 }
+main button:hover{
+    background-color: rgb(77, 77, 77);
+    color: white;
+    font-style: normal;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    width: 100%;
+    height: 60%;
+}
+
